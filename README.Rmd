@@ -88,6 +88,7 @@ The creators of `limer` no longer maintain it. An up-to-date version of the pack
 connect2ls("your_username", "your_password", "url_to_ls_api")
 extract_labels_from_ls(survey_id)
 ```
+
 `append_labels()` behaves the same regardless of the source of your labels. The only difference is that labels imported from LimeSurvey do not include the parent-question text (the `trim` argument does not apply to them).
 
 
