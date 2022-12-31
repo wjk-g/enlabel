@@ -83,7 +83,7 @@ head(tools_summary, 20)
 ```
 
 `enlabel` allows you to source the dataset for labels with
-`extract_label_from_data()`. The function accepts as an argument either
+`extract_labels_from_data()`. The function accepts as an argument either
 a path to the .sav file or to an R dataframe with a `variable.labels`
 attribute. Importing a .sav file with the `foreign` package or using the
 “Export to R” functionality in LimeSurvey will both create such objects.
@@ -142,7 +142,7 @@ tools_summary %>%
   theme(axis.title.y = element_blank())
 ```
 
-![](enlabel-vignette_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 By default, `append_labels()` searches for the codes in the “name”
 column. It is designed to to fit into the dplyr select-and-pivot

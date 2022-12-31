@@ -52,7 +52,7 @@ tools_summary <- df %>%
 head(tools_summary, 20)
 ```
 
-`enlabel` allows you to source the dataset for labels with `extract_label_from_data()`. The function accepts as an argument either a path to the .sav file or to an R dataframe with a `variable.labels` attribute. Importing a .sav file with the `foreign` package or using the "Export to R" functionality in LimeSurvey will both create such objects. Unfortunately, this does not work with objects imported with the `haven` package (this means that, in this particular case, `extract_labels_from_data(df)` is not going to work).
+`enlabel` allows you to source the dataset for labels with `extract_labels_from_data()`. The function accepts as an argument either a path to the .sav file or to an R dataframe with a `variable.labels` attribute. Importing a .sav file with the `foreign` package or using the "Export to R" functionality in LimeSurvey will both create such objects. Unfortunately, this does not work with objects imported with the `haven` package (this means that, in this particular case, `extract_labels_from_data(df)` is not going to work).
 
 If you are working with only one survey, there is no need to assign the output of `extract_labels_from_data()` to a variable - it is stored in cache.
 
