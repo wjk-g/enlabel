@@ -1,6 +1,6 @@
 ---
 title: "enlabel: quick start"
-output: rmarkdown::html_vignette
+output: rmarkdown::github_document #html_vignette
 vignette: >
   %\VignetteIndexEntry{enlabel-vignette}
   %\VignetteEncoding{UTF-8}
