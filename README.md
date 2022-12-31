@@ -142,7 +142,7 @@ tools_summary %>%
   theme(axis.title.y = element_blank())
 ```
 
-![](enlabel-vignette_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 By default, `append_labels()` searches for the codes in the “name”
 column. It is designed to to fit into the dplyr select-and-pivot
