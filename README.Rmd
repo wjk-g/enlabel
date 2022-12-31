@@ -2,7 +2,6 @@
 title: 'enlabel: quick start'
 output:
   rmarkdown::github_document: default
-  'rmarkdown::github_document #html_vignette': default
 vignette: "%\\VignetteIndexEntry{enlabel-vignette} %\\VignetteEncoding{UTF-8} %\\VignetteEngine{knitr::rmarkdown}\n"
 editor_options:
   chunk_output_type: inline
