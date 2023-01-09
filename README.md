@@ -170,7 +170,7 @@ labels. The only difference is that labels imported from LimeSurvey do
 not include the parent-question text (the `trim` argument does not apply
 to them).
 
-## Labeling data and exporting tables to excel
+### Labeling data and exporting tables to Excel
 
 `enlabel()` gives you the tools to quickly label your data and export
 marginal distributions or contingency tables (or both) to Excel. The
