@@ -19,7 +19,7 @@ export_to_excel <- function(data,
 
   # Create tables
   tables = lapply(data, function(variable) {
-    if(length(unique(variable)) < max_cat) {
+    if(length(unique(variable)) <= max_cat) {
       expss::cro_cpct(variable, banner) %>% expss::significance_cpct(bonferroni = bonferroni)
     } else if(is.numeric(variable)) {
       expss::cro_mean_sd_n(variable, banner) %>% expss::significance_means(bonferroni = bonferroni)
