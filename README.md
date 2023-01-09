@@ -189,7 +189,11 @@ extract_labels_from_ls(survey_id) # extract_labels_from_data would also work
 labs <- get_colnames(data, trim = TRUE)
 labelled_data <- label_variables(data, labs)
 
+<<<<<<< HEAD
 export_to_excel(labelled_data, # a df to be used for export 
+=======
+export_to_excel(export, # the df to be used for export 
+>>>>>>> 48662239e09d6708714e3b734f13f5bd4a8e6109
                 varnames = list("variable1", "variable2"), # variable names for contingency tables
                 max_cat = 10, # variables with > 10 unique values will not be included in the output
                 bonferroni = TRUE, # whether to apply the Bonferroni correction (default: FALSE)
