@@ -169,3 +169,29 @@ extract_labels_from_ls(survey_id)
 labels. The only difference is that labels imported from LimeSurvey do
 not include the parent-question text (the `trim` argument does not apply
 to them).
+
+## Labeling data and exporting tables to excel
+
+`enlabel()` gives you the tools to quickly label your data and export
+marginal distributions or contingency tables (or both) to Excel. The
+export itself is achieved with `export_to_excel()` which is a wrapper
+around several functions from the `expss` package. Should you want to
+label and export your data to Excel the process would look as follows:
+
+``` r
+# get your data
+
+data <- read.csv("example_data.csv")
+
+connect2ls("username", "password", "url")
+extract_labels_from_ls(survey_id) # extract_labels_from_data would also work
+
+labs <- get_colnames(data, trim = TRUE)
+labelled_data <- label_variables(data, labs)
+
+export_to_excel(labelled_data, # a df to be used for export 
+                varnames = list("variable1", "variable2"), # variable names for contingency tables
+                max_cat = 10, # variables with > 10 unique values will not be included in the output
+                bonferroni = TRUE, # whether to apply the Bonferroni correction (default: FALSE)
+                overwrite = TRUE) # whether to overwrite an existing file of the same name (default: FALSE)
+```
