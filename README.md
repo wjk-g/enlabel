@@ -128,9 +128,9 @@ tools_summary %>% append_labels() %>% head(20)
 ```
 
 If you want to visualize the data, you might want to trim the length of
-the labels which by default contain both the parent-question text as
-well as the subquestion label. You can easily discard the
-parent-question text by setting the `trim` argument to `TRUE`.
+the labels which by default contain both the parent-question text and
+the subquestion label. You can easily discard the parent-question text
+by setting the `trim` argument to `TRUE`.
 
 ``` r
 tools_summary %>% 
@@ -179,7 +179,6 @@ around several functions from the `expss` package. Should you want to
 label and export your data to Excel the process would look as follows:
 
 ``` r
-# get your data
 
 data <- read.csv("example_data.csv")
 

@@ -63,7 +63,7 @@ extract_labels_from_data("makerspaces.sav")
 tools_summary %>% append_labels() %>% head(20)
 ```
 
-If you want to visualize the data, you might want to trim the length of the labels which by default contain both the parent-question text as well as the subquestion label. You can easily discard the parent-question text by setting the `trim` argument to `TRUE`.
+If you want to visualize the data, you might want to trim the length of the labels which by default contain both the parent-question text and the subquestion label. You can easily discard the parent-question text by setting the `trim` argument to `TRUE`.
 
 ```{r fig.height=7, fig.width=7}
 tools_summary %>% 
@@ -95,7 +95,6 @@ extract_labels_from_ls(survey_id)
 `enlabel()` gives you the tools to quickly label your data and export marginal distributions or contingency tables (or both) to Excel. The export itself is achieved with `export_to_excel()` which is a wrapper around several functions from the `expss` package. Should you want to label and export your data to Excel the process would look as follows:
 
 ```{r eval=FALSE}
-# get your data
 
 data <- read.csv("example_data.csv")
 
