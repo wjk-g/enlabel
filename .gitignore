@@ -1,0 +1,38 @@
+.Rproj.user
+inst/doc
+
+# Data
+makerspaces.sav
+
+# Manual testing
+manual_testing/
+
+# Environment vars 
+.Renviron
+
+# History files
+.Rhistory
+.RData
+.Rapp.history
+
+# Example code in package build process
+*-Ex.R
+.Rproj.user
+
+# ShinyApps manifest
+*.dcf
+
+# Fonts
+*.ttc
+
+# DS Store
+.DS_Store
+
+
+# Log Files
+logfile*.txt
+
+# Packrat lockfiles generated during RSC deploy
+packrat.lock
+
+169-prerender-a/index.html
